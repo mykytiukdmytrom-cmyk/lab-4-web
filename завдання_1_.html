@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="Author" content="Микитюк Дмитро Михайлович">
+    <meta charset="UTF-8">
+  <title>Фірма «2 удара»</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .col-a { background-color: #ffffff; }
+    .center { text-align: center; }
+    .merged { background-color: #ffffff; text-align: center; }
+    h1, h2 { text-align: center; }
+  </style>
+</head>
+<body>
+
+<h1>Фірма «2 удара»</h1>
+<p style="text-align:center;">Продаж алкогольних напоїв. Лише для осіб, старших за 18 років.</p>
+<p style="text-align:center;">Наша випивка робить 2 удара, перший по гаманцю другий по здоров'ю, тільки ви визначаєте силу цих ударів.</p>
+
+<!-- ТАБЛИЦЯ 1: за структурою варіанта №19 -->
+<h2>Таблиця 1. Каталог товарів (варіант №19)</h2>
+
+<table id="table19" border="2" cellpadding="8" cellspacing="0" bgcolor="ffffff" width="800" align="center">
+  <caption lang="uk" style="font-weight: bold; margin-bottom: 8px;">Асортимент фірми «2 удара»</caption>
+
+  <colgroup>
+    <col class="col-a" width="40">
+    <col width="170">
+    <col width="70">
+    <col class="col-a" width="80">
+    <col width="110">
+    <col width="110">
+    <col width="90">
+    <col class="col-a" width="100">
+  </colgroup>
+
+  <thead dir="ltr" valign="middle" title="Заголовок таблиці">
+    <tr bgcolor="11ff00" valign="middle" align="center">
+      <th abbr="№">№</th>
+      <th colspan="3" axis="product" abbr="Товар">Інформація про товар</th>
+      <th colspan="3" axis="sale" abbr="Продаж">Виробник і ціна</th>
+      <th abbr="Наявність">Наявність</th>
+    </tr>
+    <tr bgcolor="#eeeeee" valign="middle" align="center">
+      <th>№</th>
+      <th>Назва</th>
+      <th>Об'єм, л</th>
+      <th>Міцність</th>
+      <th>Виробник</th>
+      <th>Країна</th>
+      <th>Ціна, грн</th>
+      <th>Наявність</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- Група 1: Горілка -->
+    <tr dir="ltr" valign="middle">
+      <td rowspan="2" class="center" title="Горілка">1</td>
+      <td>Горілка «Класична»</td>
+      <td>0,5</td>
+      <td rowspan="2" class="merged" style="color: #ff0000;">40%</td>
+      <td>Хортиця</td>
+      <td colspan="2" class="center">Україна, 185 грн</td>
+      <td rowspan="2" class="center" style="color: #11ff00;">В наявності</td>
+    </tr>
+    <tr>
+      <td>Горілка «Делюкс»</td>
+      <td>0,7</td>
+      <td>Nemiroff</td>
+      <td>Україна</td>
+      <td>260</td>
+    </tr>
+
+    <!-- Група 2: Вино -->
+    <tr>
+      <td rowspan="2" class="center" title="Вино">2</td>
+      <td>Вино червоне сухе</td>
+      <td>0,75</td>
+      <td rowspan="2" class="merged" style="color: #ff0000;">12%</td>
+      <td>Шабо</td>
+      <td colspan="2" class="center">Україна, 260 грн</td>
+      <td rowspan="2" class="center" style="color: #11ff00;">В наявності</td>
+    </tr>
+    <tr>
+      <td>Вино біле напівсолодке</td>
+      <td>0,75</td>
+      <td>Villa UA</td>
+      <td>Україна</td>
+      <td>230</td>
+    </tr>
+
+    <!-- Група 3: Пиво -->
+    <tr>
+      <td rowspan="2" class="center" title="Пиво">3</td>
+      <td>Пиво світле</td>
+      <td>0,5</td>
+      <td rowspan="2" class="merged" style="color: #ff0000;">4,8%</td>
+      <td>Львівське</td>
+      <td colspan="2" class="center">Україна, 45 грн</td>
+      <td rowspan="2" class="center" style="color: #fbff00;">Під замовлення</td>
+    </tr>
+    <tr>
+      <td>Пиво темне</td>
+      <td>0,5</td>
+      <td>Чернігівське</td>
+      <td>Україна</td>
+      <td>48</td>
+    </tr>
+
+    <!-- Група 4: Коньяк -->
+    <tr>
+      <td rowspan="2" class="center" title="Коньяк">4</td>
+      <td>Коньяк «Престиж»</td>
+      <td>0,5</td>
+      <td rowspan="2" class="merged" style="color: #ff0000;">40%</td>
+      <td>Таврія</td>
+      <td colspan="2" class="center">Україна, 390 грн</td>
+      <td rowspan="2" class="center" style="color: #11ff00;">В наявності</td>
+    </tr>
+    <tr>
+      <td>Коньяк «Золотий»</td>
+      <td>0,7</td>
+      <td>Закарпатський</td>
+      <td>Україна</td>
+      <td>520</td>
+    </tr>
+
+    <!-- Підсумковий рядок -->
+    <tr bgcolor="#fafafa" class="center">
+      <td>-</td>
+      <td>Усього позицій</td>
+      <td>8</td>
+      <td>-</td>
+      <td>Середня ціна</td>
+      <td>-</td>
+      <td>242</td>
+      <td>-</td>
+    </tr>
+
+    <!-- Останній рядок -->
+    <tr bgcolor="#f0f0f0">
+      <td colspan="3" class="center">Фірма «2 удара»</td>
+      <td class="center">18+</td>
+      <td colspan="4" class="center">Тел.: +380 00 000 00 00, вул. Центральна, 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ТАБЛИЦЯ 2: звичайна -->
+<h2>Таблиця 2. Акційні пропозиції</h2>
+
+<table id="table2" border="1" cellpadding="6" cellspacing="0" bgcolor="#ffffff" align="center" width="600">
+  <caption lang="uk" style="font-weight: bold;">Знижки тижня</caption>
+  <thead>
+    <tr bgcolor="11ff00">
+      <th>Товар</th>
+      <th>Стара ціна, грн</th>
+      <th>Нова ціна, грн</th>
+      <th>Знижка</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Горілка «Класична» 0,5 л</td><td>185</td><td>165</td><td>11%</td></tr>
+    <tr><td>Вино червоне сухе 0,75 л</td><td>260</td><td>230</td><td>12%</td></tr>
+    <tr><td>Пиво світле 0,5 л</td><td>45</td><td>40</td><td>11%</td></tr>
+    <tr><td>Коньяк «Престиж» 0,5 л</td><td>390</td><td>350</td><td>10%</td></tr>
+  </tbody>
+</table>
+
+</body>
+</html>
